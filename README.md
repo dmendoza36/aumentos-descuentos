@@ -21,7 +21,17 @@ npm run build
 npm run preview
 ```
 
-`npm test` comprueba la puntuación, los intentos incompletos y el reinicio. `npm run build` genera la web estática en `dist/`. `npm run preview` permite revisar esa compilación localmente. El alojamiento se definirá después de revisar el producto.
+`npm test` comprueba la puntuación, los intentos incompletos y el reinicio. `npm run build` genera la web estática en `dist/`. `npm run preview` permite revisar esa compilación localmente, dentro de la ruta `/aumentos-descuentos/`.
+
+## Publicar en GitHub Pages
+
+El repositorio de destino es `dmendoza36/aumentos-descuentos`. La cuenta propietaria debe activar **Settings → Pages → Build and deployment → Source → GitHub Actions**.
+
+El flujo `.github/workflows/deploy.yml` comprueba el examen, compila el proyecto y publica `dist/` cada vez que se suben cambios a `main`. También puede iniciarse desde **Actions → Publicar web en GitHub Pages → Run workflow**. Para volver a ejecutar un flujo fallido tras activar Pages, usar **Re-run all jobs** en esa ejecución.
+
+Cuando la ejecución termine correctamente, la URL pública será `https://dmendoza36.github.io/aumentos-descuentos/`. El estado de la publicación se consulta en **Actions** y **Settings → Pages**.
+
+`vite.config.js` define la ruta base del repositorio. Si se cambia su nombre o se publica en otro dominio, hay que ajustar esa ruta y volver a compilar.
 
 ## Modificar el contenido y el diseño
 
