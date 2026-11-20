@@ -1,5 +1,7 @@
 # Aumentos y descuentos
 
+**Página web:** [Abrir Aumentos y descuentos](https://dmendoza36.github.io/aumentos-descuentos/)
+
 Web educativa con ambientación pixel art, explicaciones, fórmulas, ocho ejercicios resueltos y un examen de tres preguntas. Usa HTML, CSS y JavaScript con Vite. Las respuestas y los resultados permanecen solo en memoria y desaparecen al recargar.
 
 ## Ejecutar en desarrollo
